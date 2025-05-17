@@ -1,75 +1,63 @@
-# 𝐀𝐚𝐡𝐚𝐚𝐫𝐚𝐦 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬
+## 🛍️ Simple ecommerce cart application [![CircleCI](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart.svg?style=svg)](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart)
 
-Aaharam Restaurant is a full-stack web application built for booking food services. It allows users to browse through various restaurants, view menus, select items, and make reservations.
+<p align="center">
 
-## Features
+  <img src="./readme-banner.png">
+</p>
 
-- **User Authentication:** Secure user authentication and authorization system to manage user accounts and access.
-- **Browse Restaurants:** Users can browse through a list of available restaurants.
-- **View Menus:** Detailed menus for each restaurant with item descriptions and prices.
-- **Make Reservations:** Users can select items from the menu and make reservations for dining in.
-- **Responsive Design:** The application is designed to work seamlessly across various devices and screen sizes.
+## Basic Overview - [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
 
-## Screenshots and Demo
+<p align="left">
 
-<div align="center">
-  <img alt="Demo" src="./rest.gif" />
-</div>
+  <img src="./work-in-the-netherlands.png" width="380" height="90">
+</p>
 
-## Technologies Used
+✈️ [Follow Jeremy Akeze](https://www.linkedin.com/in/jeremy-akeze-9542b396/)
 
-- **Frontend:** React.js, HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** Firebase
-- **Authentication:** JSON Web Tokens (JWT)
-- **Deployment:** Vercel
+This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 
-## Getting Started
+#### Features
 
-To get a local copy of the project up and running, follow these steps:
+- Add and remove products from the floating cart using Context Api
+- Filter products by available sizes using Context Api
+- Responsive design
 
-1. Clone the repository:
+<!--
+## Getting started
 
-   ```bash
-   git clone https://github.com/your-username/aaharam-restaurant.git
-   ```
+Try playing with the code on CodeSandbox :)
 
-2. Navigate to the project directory:
+[![Edit app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/74rykw70qq)
+ -->
 
-   ```bash
-   cd aaharam-restaurant
-   ```
+## Build/Run
 
-3. Install dependencies:
+#### Requirements
 
-   ```bash
-   npm install
-   ```
+- Node.js
+- NPM
 
-4. Set up environment variables:
-   
-   Create a `.env` file in the root directory and define the following variables:
+```javascript
 
-   ```plaintext
-   PORT=3000
-   MONGODB_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   ```
+/* First, Install the needed packages */
+npm install
 
-5. Start the development server:
+/* Then start the React app */
+npm start
 
-   ```bash
-   npm start
-   ```
+/* To run the tests */
+npm run test
 
-6. Access the application at `http://localhost:3000` in your web browser.
+```
 
-## Contributing
+### Copyright and license
 
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
+The MIT License (MIT). Please see License File for more information.
 
+<br/>
+<br/>
 
-## Acknowledgements
-
-- This project was inspired by the need for a simple and intuitive platform for booking food services.
-- Special thanks to the developers of React, Node.js, Express.js, and MongoDB for providing the tools and frameworks necessary for building this application.
+<p align="center"><img src="http://www.jeffersonribeiro.com/assets/img/apple-icon-180x180.png" width="35" height="35"/></p>
+<p align="center">
+<sub>A little project by <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
+</p>

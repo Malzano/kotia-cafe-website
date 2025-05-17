@@ -1,26 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom';
-import { StateProvider } from './context/StateProvider';
-import { initialState } from './context/initialState';
-import reducer from './context/reducer';
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <Router>
-      <StateProvider  initialState={initialState} reducer = {reducer}>
-      <App />
-      </StateProvider>
-    </Router>
-  </React.StrictMode>
-);
+import { StrictMode } from 'react';
+import * as ReactDOMClient from 'react-dom/client';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/* Theme */
+import { ThemeProvider } from 'commons/style/styled-components';
+import { theme } from 'commons/style/theme';
+import GlobalStyle from 'commons/style/global-style';
+
+/* Context Providers */
+import { ProductsProvider } from 'contexts/products-context';
+import { CartProvider } from 'contexts/cart-context';
+
+import App from 'components/App';
+
+const root = document.getElementById('root')!;
+const container = ReactDOMClient.createRoot(root);
+
+container.render(
+  <StrictMode>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <ProductsProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductsProvider>
+    </ThemeProvider>
+  </StrictMode>
+);
